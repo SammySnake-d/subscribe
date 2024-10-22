@@ -396,7 +396,7 @@ def aggregate(args: argparse.Namespace) -> None:
 
         if files:
             push_client = push.PushToGist(token=access_token)
-
+            print(f"valid push configuration: {push_conf}")
             # 上传
             success = push_client.push_to(content="", push_conf=push_conf, payload={"files": files}, group="collect")
             if success:
