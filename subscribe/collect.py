@@ -100,6 +100,7 @@ def assign(
 
     subscribes_file = utils.trim(kwargs.get("subscribes_file", ""))
     access_token = utils.trim(kwargs.get("access_token", ""))
+    print(f"valid access token: {access_token}")
     gist_id = utils.trim(kwargs.get("gist_id", ""))
     username = utils.trim(kwargs.get("username", ""))
     chuck = kwargs.get("chuck", False)
